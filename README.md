@@ -27,26 +27,20 @@ It also handles `min-size` to set `min-width` and `min-height`, and `max-size` t
 
 ```css
 .two {
-  width: 20px;
-  height: 10px;
+  inline-size: 20px;
+  block-size: 10px;
 }
 .one {
-  width: 10px;
-  height: 10px;
+  inline-size: 10px;
+  block-size: 10px;
 }
 .minmax {
-  min-width: 10px;
-  min-height: 10px;
-  max-width: 200px;
-  max-height: auto;
+  min-inline-size: 10px;
+  min-block-size: 10px;
+  max-inline-size: 200px;
+  max-block-size: auto;
 }
 ```
-
-<a href="https://evilmartians.com/?utm_source=postcss-size">
-  <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
-       alt="Sponsored by Evil Martians" width="236" height="54">
-</a>
-
 
 ## Usage
 
