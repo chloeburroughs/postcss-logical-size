@@ -1,4 +1,6 @@
-# PostCSS Size
+# PostCSS Logical Size
+
+A fork of [PostCSS-Size](https://github.com/postcss/postcss-size) that swaps out the height and width for block-size and inline-size.
 
 <img align="right" width="135" height="95"
      title="Philosopher’s stone, logo of PostCSS"
