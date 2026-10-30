@@ -1,7 +1,11 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 5.0
+## 1.0
+* Forked from [`postcss-size`](https://github.com/postcss/postcss-size) 5.0 and renamed to `postcss-logical-size`.
+* Output logical properties instead of physical ones. `size` now sets `inline-size` and `block-size` (was `width` and `height`), `min-size` sets `min-inline-size` and `min-block-size`, and `max-size` sets `max-inline-size` and `max-block-size`.
+
+## postcss-size 5.0
 * Added `min-size` and `max-size` support (by @meduzen).
 * Removed Node.js 10, 12, 14, 16 support.
 

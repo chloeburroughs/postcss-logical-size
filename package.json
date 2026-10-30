@@ -1,18 +1,20 @@
 {
-  "name": "postcss-size",
-  "version": "5.0.0",
-  "description": "PostCSS plugin for size shortcut",
+  "name": "postcss-logical-size",
+  "version": "1.0.0",
+  "description": "PostCSS plugin for a size shortcut that sets logical properties (inline-size and block-size)",
   "keywords": [
     "postcss",
     "css",
     "postcss-plugin",
     "size",
-    "width",
-    "height"
+    "inline-size",
+    "block-size",
+    "height",
+    "width"
   ],
-  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "author": "Chloe Burroughs <chloe@chloeburroughs.wtf>",
   "license": "MIT",
-  "repository": "postcss/postcss-size",
+  "repository": "chloeburroughs/postcss-logical-size",
   "scripts": {
     "test:coverage": "c8 pnpm bnt",
     "test:lint": "eslint .",
@@ -21,16 +23,6 @@
   "engines": {
     "node": ">=18.0"
   },
-  "funding": [
-    {
-      "type": "opencollective",
-      "url": "https://opencollective.com/postcss/"
-    },
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/ai"
-    }
-  ],
   "peerDependencies": {
     "postcss": "^8.1.0"
   },

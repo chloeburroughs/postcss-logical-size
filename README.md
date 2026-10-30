@@ -6,9 +6,9 @@ A fork of [PostCSS-Size](https://github.com/postcss/postcss-size) that swaps out
      title="Philosopher’s stone, logo of PostCSS"
      src="https://postcss.org/logo-leftp.svg">
 
-[PostCSS] plugin for `size` shortcut to set `width` and `height` properties.
+[PostCSS] plugin for `size` shortcut to set `inline-size` and `block-size` properties.
 
-It also handles `min-size` to set `min-width` and `min-height`, and `max-size` to set `max-width` and `max-height`.
+It also handles `min-size` to set `min-inline-size` and `min-block-size`, and `max-size` to set `max-inline-size` and `max-block-size`.
 
 [PostCSS]: https://github.com/postcss/postcss
 
@@ -47,10 +47,10 @@ It also handles `min-size` to set `min-width` and `min-height`, and `max-size` t
 **Step 1:** Install plugin:
 
 ```sh
-npm install --save-dev postcss postcss-size
+npm install --save-dev postcss postcss-logical-size
 ```
 
-**Step 2:** Check you project for existed PostCSS config: `postcss.config.js`
+**Step 2:** Check your project for an existing PostCSS config: `postcss.config.js`
 in the project root, `"postcss"` section in `package.json`
 or `postcss` in bundle config.
 
@@ -62,7 +62,7 @@ and set this plugin in settings.
 ```diff
 module.exports = {
   plugins: [
-+   require('postcss-size'),
++   require('postcss-logical-size'),
     require('autoprefixer')
   ]
 }
